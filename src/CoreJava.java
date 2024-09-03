@@ -32,7 +32,7 @@ public class CoreJava {
         CoreJava.SwapFourNumbersUsingTempVariables(7, 9, 10, 12);
 
         System.out.println("**********************************");
-        CoreJava.SwapFourNumbersWithoutUsingTempVaraibles(7, 9, 10, 12 );
+        CoreJava.SwapFourNumbersWithoutUsingTempVariables(7, 9, 10, 12 );
 
 
 
@@ -49,7 +49,7 @@ public class CoreJava {
 
     }
 
-
+// Swap Three Numbers Using Temp variables
     private static void SwapThreeNumbersUsingTempVariables(int e, int f, int g) {
 
         int i;
@@ -77,7 +77,7 @@ public class CoreJava {
         System.out.println("Value of f " + f);
         System.out.println("Value of g " + g);
     }
-
+    // Swap Three Numbers Without Using TempVariables
 
     private static void SwapFourNumbersUsingTempVariables(int e , int f, int g, int h){
 
@@ -94,8 +94,8 @@ public class CoreJava {
         System.out.println("Value of h " + h);
 
     }
-
-    private static void SwapFourNumbersWithoutUsingTempVaraibles(int e, int f, int g, int h){
+    // Swap Four Numbers Using Temp Variables
+    private static void SwapFourNumbersWithoutUsingTempVariables(int e, int f, int g, int h){
 
         e = e + f + g + h;
 
@@ -112,6 +112,6 @@ public class CoreJava {
         System.out.println("Value of g " + g);
         System.out.println("Value of h " + h);
     }
-
+    // Swap Four Numbers Without Using Temp Variables
 
 }
