@@ -2,7 +2,6 @@ public class CoreJava {
     public static void main(String[] args){
 
         System.out.println("Hello");
-        System.out.println("Ke gardai cha yoo");
 
         int a = 20;
 
