@@ -1,9 +1,10 @@
 public class JavaCalculation {
     public static void main (String [] args) {
 
-        JavaCalculation.FinalPlanCost(699);
-        JavaCalculation.FinalBillAmount(399, 399);
+        JavaCalculation.FinalPlanCost(700);
+        JavaCalculation.FinalBillAmount(399, 2);
         JavaCalculation.TaxAmount(85000);
+        JavaCalculation.InterestAmount(65000,0.068, 5);
 
 
     }
@@ -19,11 +20,11 @@ public class JavaCalculation {
 
     }
 
-    public static void FinalBillAmount(double Pizza1, double Pizza2){
+    public static void FinalBillAmount(double Pizza, double numberofPiizza){
 
        double discount = 0.2d;
 
-       double FinalBill =  (Pizza1+Pizza2) -((Pizza1+Pizza2)*discount);
+       double FinalBill =  numberofPiizza*((Pizza) -((Pizza)*discount));
 
        System.out.println ("The Final Bill Amount is =  " +             FinalBill);
 
@@ -41,6 +42,17 @@ public class JavaCalculation {
         System.out.println("The Tax Amount is " + TaxAmount);
         System.out.println("The Net Amount is " + netPay);
 
+    }
+
+    public static void InterestAmount(double Deposit, double Rate, double time){
+
+
+        double InterestofAmount =  (Deposit + Rate + time)/100;
+
+        double FinalAmount = InterestofAmount + Deposit;
+
+        System.out.println(" The Interest Amount " + InterestofAmount );
+        System.out.println ("The Final Amount " + FinalAmount);
     }
 
 
